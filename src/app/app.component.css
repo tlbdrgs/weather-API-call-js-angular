@@ -49,4 +49,32 @@
     font-family: 'Caveat', cursive;
   }
 
+.weather-icon {
+  height: 200px;
+  display: block;
+}
  
+.animated-background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: gradientAnimation 10s linear infinite;
+}
+
+.info-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.info-table td {
+  padding: 8px;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.info-table td:first-child {
+  font-weight: bold;
+  color: #333;
+}

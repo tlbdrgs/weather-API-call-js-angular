@@ -11,15 +11,26 @@
   </div>
   <div class="right-side">
     <div class="upper-right">
-      <h2>City: {{ city }}</h2>
-      <p>Date: {{ date }}</p>
-      <p>Hour: {{ hour }}</p>
+      <table class="info-table">
+        <tr>
+          <td>City:</td>
+          <td>{{ city }}</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>{{ date }}</td>
+        </tr>
+        <tr>
+          <td>Hour:</td>
+          <td>{{ hour }}</td>
+        </tr>
+      </table>
     </div>
     <div class="lower-right">
       <p class="weather-description">{{ weatherDescription }}</p>
+      <img src={{icon_code}} alt = "weather icon" class = "weather-icon">
     </div>
   </div>
 </main>
-
 
 <router-outlet />
